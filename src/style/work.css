@@ -1,180 +1,262 @@
 @charset "UTF-8";
 
-
-
-
 /*===============================================================
 
-	common
+	作品詳細ページ / AboutMore の共通スタイル
+
+	元は body に width:1920px を直接指定していたため、1920px 未満の
+	画面では overflow-x:hidden と相まって右側が切れていた。
+	固定 px を common.css の基準値と clamp() に置き換えている。
 
 ===============================================================*/
 
 a:hover {
-  opacity: 1;
+    opacity: 1;
 }
-
 
 .description {
-  font-size: 12px;
-  font-weight: 200;
-}
-
-.concept {
- 
+    font-size: 12px;
+    font-weight: 200;
 }
 
 p {
     font-family: ＭＳ ゴシック;
 }
 
-
+body {
+    background-color: #121212;
+    overflow-x: hidden;
+    max-width: var(--content-max);
+    margin: auto;
+}
 
 /*---------------------------------------------------------------
 	header
 ---------------------------------------------------------------*/
+
 header {
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 40px;
+    padding: clamp(16px, 2.1vw, 40px);
+    pointer-events: none;
 }
 
-
+.nav {
+    pointer-events: auto;
+    display: inline-block;
+}
 
 .menu-item {
-    padding-bottom: 20px;
-   
+    padding-bottom: clamp(10px, 1vw, 20px);
 }
 
 .menu-itemImg {
     width: auto;
-    height: 20px;
-}
-body {
-    background-color: #121212;
-    overflow-x: hidden;
-    width: 1920px;
-    margin: auto;
+    height: clamp(14px, 1vw, 20px);
 }
 
+/*---------------------------------------------------------------
+	hero（タイトル画像と見出しの重なり）
 
-main {
-}
+	以前は .title に bottom:300px、.Commentary に margin-top:-450px を
+	当てて視覚位置を合わせていた。1920px 以外では破綻するので、
+	hero を position:relative の器にして見出しを absolute で重ねる。
+---------------------------------------------------------------*/
 
-.wrapper {
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-
-
-
-.title {
+main > .title {
     position: relative;
-    bottom: 300px;
-    width:100%;
-
+    width: 100%;
+    margin-bottom: var(--block-gap);
 }
 
+main > .title > .PYimage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-header.title {
+    position: absolute;
+    left: var(--page-gutter);
+    right: var(--page-gutter);
+    bottom: clamp(4px, 1.5vw, 32px);
+}
 
 .titleSize1 {
-    margin-left: 150px;
-    margin-top: 230px;
-    font-size: 150px;
+    font-size: clamp(26px, 7.8vw, 150px);
     font-family: eurostile, sans-serif;
     font-weight: 500;
     font-style: normal;
+    line-height: 1.05;
+    /* 1MinuteProjectionMappingInTokyo2023 のような長いタイトルの溢れ対策 */
+    overflow-wrap: anywhere;
 }
 
-
-
-
+/* hero 画像を持たない場合（Design / Picture 以外で hero なしのページ）は
+   見出しを重ねる相手がいないので通常フローに戻す */
+main > .title:not(:has(> .PYimage)) .section-header.title {
+    position: static;
+    padding: clamp(80px, 10vw, 200px) var(--page-gutter) 0;
+}
 
 /*---------------------------------------------------------------
-	Commentary
+	本文
+---------------------------------------------------------------*/
+
+.wrapper {
+    margin-left: var(--page-gutter);
+    margin-right: var(--page-gutter);
+}
+
+/*---------------------------------------------------------------
+	Commentary（ページ固有の補足。現状は Runmen のみ）
 ---------------------------------------------------------------*/
 
 .Commentary {
-    margin-top: -450px;
+    margin-top: clamp(24px, 3vw, 60px);
+    /* .RXimage / .LXimage は再生前に translateX で横にずれているため、
+       ここでクリップしないと一時的に横スクロールが発生する */
+    overflow-x: clip;
 }
 
-.commentaryimg {
-    width: auto;
-    height: 390px;
-    display: inline-block;
-    padding-bottom:150px;
-}
-
-
+.commentaryimg,
 .commentaryimgaf {
     width: auto;
-    height: 390px;
+    height: auto;
+    max-height: clamp(160px, 20.3vw, 390px);
     display: inline-block;
-    padding-left: 150px;
-    padding-bottom: 150px;
+    padding-bottom: clamp(32px, 7.8vw, 150px);
 }
 
+.commentaryimgaf {
+    padding-left: clamp(16px, 7.8vw, 150px);
+}
 
-
-
+/* clamp() は最小値 <= 最大値である必要があるため、負の値では
+   最小 = 最も小さい（絶対値が大きい）側になる */
 .commentarytext {
-    margin-top: -100px;
-    font-size: 23px;
+    margin-top: clamp(-100px, -5.2vw, -40px);
+    font-size: clamp(15px, 1.2vw, 23px);
+    line-height: 1.6;
 }
 
 .commentarytext2 {
-    margin-top: -110px;
-    font-size: 22.5px;
-    line-height: 40px;
+    margin-top: clamp(-110px, -5.7vw, -44px);
+    font-size: clamp(15px, 1.17vw, 22.5px);
+    line-height: 1.7;
 }
-
 
 .commentarybox3 {
-margin-top:150px;
-
+    margin-top: clamp(40px, 7.8vw, 150px);
 }
 
+/*---------------------------------------------------------------
+	Video
+---------------------------------------------------------------*/
 
 .Video {
-    margin-top: 150px;
+    margin-top: clamp(40px, 7.8vw, 150px);
     display: block;
 }
 
+.Video iframe {
+    display: block;
+    width: 100%;
+    /* 元は height:815px 固定。幅に応じて 16:9 を保つ */
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+
+.Video iframe + iframe {
+    margin-top: clamp(16px, 2vw, 40px);
+}
+
+/*---------------------------------------------------------------
+	Explanatory（見出し + 本文の2カラム）
+---------------------------------------------------------------*/
 
 .Explanatory {
-    margin-top: 100px;
+    margin-top: var(--block-gap);
 }
-
 
 .ExplanatoryBox {
-    margin-top:100px;
-
-}
-
-.ExplanatoryBox2 {
+    margin-top: var(--block-gap);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: clamp(8px, 1vw, 20px);
 }
 
 .ExplanatoryH3 {
-    font-size: 25px;
+    font-size: clamp(17px, 1.3vw, 25px);
     font-family: eurostile, sans-serif;
     font-weight: 500;
-    vertical-align: top;
-    display: inline-block;
-    width:300px;
+    line-height: 1.5;
+    flex: 0 0 clamp(140px, 15.6vw, 300px);
 }
-
 
 .ExplanatoryText {
-    font-size: 23px;
-    vertical-align: top;
-    display: inline-block;
-    line-height: 36.57px;
+    font-size: clamp(15px, 1.2vw, 23px);
+    line-height: 1.6;
+    flex: 1 1 320px;
+    /* flex アイテムの min-width:auto による溢れを防ぐ */
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
+/* 幅が足りない場合は見出しと本文を縦積みにする */
+@media (max-width: 768px) {
+    /* 縦並びのナビは高さを取りすぎてヒーロー画像の文字に重なるため、横一列にする */
+    .menu-group {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 18px;
+    }
+
+    .menu-item {
+        padding-bottom: 0;
+    }
+
+    .ExplanatoryH3,
+    .ExplanatoryText {
+        flex-basis: 100%;
+    }
+
+    .ExplanatoryText {
+        margin-top: 8px;
+    }
+
+    /* 画像が縦に積まれるため、テキストを引き上げる負のマージンは外す */
+    .commentarytext,
+    .commentarytext2 {
+        margin-top: 16px;
+    }
+
+    .commentaryimg,
+    .commentaryimgaf {
+        display: block;
+        max-height: none;
+        padding-bottom: 16px;
+    }
+
+    .commentaryimgaf {
+        padding-left: 0;
+    }
+
+    .commentarybox3 {
+        margin-top: 24px;
+    }
+}
+
+/*---------------------------------------------------------------
+	footer
+---------------------------------------------------------------*/
+
 .endButtomBox {
-    padding-top: 100px;
+    padding-top: var(--block-gap);
     padding-bottom: 10px;
     text-align: center;
 }
@@ -182,58 +264,71 @@ margin-top:150px;
 .endButtom {
     width: auto;
     height: 20px;
-
 }
 
 .Reserved {
     text-align: right;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding: 30px var(--page-gutter) 10px;
 }
 
 .copyright {
-    font-size: 15px;
+    font-size: clamp(12px, 0.8vw, 15px);
     font-family: eurostile, sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
+/*---------------------------------------------------------------
+	スクロール連動アニメーション
+
+	開始位置は px 直値だと狭い画面で画面外に飛びすぎるため、
+	要素サイズ基準（%, em）か vw に置き換えている。
+---------------------------------------------------------------*/
+
 .RXimage {
     position: relative;
-    transform: translateX(300px);
+    transform: translateX(30%);
     opacity: 0;
 }
 
 .LXimage {
     position: relative;
-    transform: translateX(-300px);
+    transform: translateX(-30%);
     opacity: 0;
 }
 
 .PYimage {
     position: relative;
-    transform: translateY(-300px);
+    transform: translateY(-28%);
     opacity: 0;
 }
-
 
 .PYimageText {
     position: relative;
-    transform: translateY(-500px);
+    transform: translateY(-3em);
     opacity: 0;
 }
-
 
 .is-inview {
     opacity: 1;
     transition-delay: 0.25s;
-    transform: translateX(0px);
+    transform: translateX(0);
     transition-duration: 0.5s;
 }
 
 .is-inviewTitle {
     opacity: 1;
     transition-delay: 0.5s;
-    transform: translateY(0px);
+    transform: translateY(0);
     transition-duration: 1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .RXimage,
+    .LXimage,
+    .PYimage,
+    .PYimageText {
+        transform: none;
+        opacity: 1;
+    }
 }

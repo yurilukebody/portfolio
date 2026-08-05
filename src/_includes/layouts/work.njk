@@ -23,17 +23,18 @@ ads: true
 		</div>
 		<div class="wrapper">
 
-			<div class="Commentary">
 {%- if work.commentaryHtml %}
+			<div class="Commentary">
 				{{ work.commentaryHtml | join("\n\t\t\t\t") | safe }}
-{%- endif %}
 			</div>
+{%- endif %}
 {%- if work.videos %}
 
 			<div class="Video">
 {%- for video in work.videos %}
 {%- set videoTitle = video.title if video.title else ("YouTube video player" if video.provider == "youtube") %}
-				<iframe src="{{ video.src }}" width="100%" height="815px" frameborder="0"{% if videoTitle %} title="{{ videoTitle }}"{% endif %} allow="{{ youtubeAllow if video.provider == "youtube" else vimeoAllow }}" allowfullscreen></iframe>
+				{# サイズは work.css の aspect-ratio 16/9 で決める #}
+				<iframe src="{{ video.src }}" frameborder="0"{% if videoTitle %} title="{{ videoTitle }}"{% endif %} allow="{{ youtubeAllow if video.provider == "youtube" else vimeoAllow }}" allowfullscreen></iframe>
 {%- endfor %}
 			</div>
 {%- endif %}

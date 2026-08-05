@@ -6,16 +6,27 @@
 
 $(window).on('load', function(){
 
+  // 769px 以上は横スクロール、768px 以下は通常の縦スクロールに切り替える。
+  // ブレークポイントは IndexStyle.css の @media と対になっている
   var scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     direction: 'horizontal',
     multiplier: 1, // スクロールの速度（値が小さいほど遅くなる）
-    horizontalGesture: true
+    horizontalGesture: true,
+    tablet: {
+      breakpoint: 769,
+      smooth: false,
+      direction: 'vertical',
+      horizontalGesture: false
+    },
+    smartphone: {
+      smooth: false,
+      direction: 'vertical',
+      horizontalGesture: false
+    }
   });
-  
- 
-  
+
 });
 
 

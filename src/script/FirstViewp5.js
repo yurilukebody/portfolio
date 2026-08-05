@@ -4,13 +4,19 @@ let pentagon;
 let _strutFactor;
 let _strutNoise;
 function setup() {
-    canvas = createCanvas(1920, 1080);
-    canvas.position(0, 0);//canvasをページの原点に固定
+    // 以前は createCanvas(1920, 1080) の固定生成だったため、
+    // 1920px 未満の画面ではキャンバスがはみ出して横スクロールが発生していた
+    canvas = createCanvas(windowWidth, windowHeight);
+    canvas.position(0, 0, 'fixed');//canvasを背景として画面に固定
     canvas.style('z-index', '-1');//canvasを後ろに移動する
     smooth();
     stroke(3,3, 245, 15);
     _strutNoise = random(10);
     _strutFactor = (noise(_strutNoise) * 2) - 1;
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
 function draw() {
     background(13);
@@ -30,11 +36,13 @@ class FractalRoot {
         this.pointArr = [];
         this.centX = width / 3;
         this.centY = height / 1.9;
+        // 半径もキャンバスサイズに追従させる（1080px 高で従来の 250 相当）
+        let radius = min(width, height) * 0.23;
         let angleStep = 360 / _numSides;
         let count = 0;
         for (let i = 0; i < 1024; i += angleStep) {
-            this.x = this.centX + (250 * cos(radians(startAngle + i)));
-            this.y = this.centY + (250 * sin(radians(startAngle + i)));
+            this.x = this.centX + (radius * cos(radians(startAngle + i)));
+            this.y = this.centY + (radius * sin(radians(startAngle + i)));
             this.pointArr[count] = new PointObj(this.x, this.y);
             count++;
         }
