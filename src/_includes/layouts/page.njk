@@ -1,0 +1,11 @@
+---
+layout: layouts/base.njk
+---
+{#- 共通ナビと共通フッターを持つ下層ページの骨格 -#}
+{%- include "partials/nav.njk" %}
+{{ content | safe }}
+	<footer>
+		<div class="Reserved">
+			<p class="copyright textColor">© {{ site.author }} All Rights Reserved.</p>
+		</div>
+	</footer>

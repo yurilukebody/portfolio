@@ -1,0 +1,91 @@
+[
+  {
+    "title": "AboutMore",
+    "hero": "images/more.png",
+    "sections": [
+      {
+        "heading": "Hobby",
+        "body": [
+          "アニメ鑑賞、ゲーム、リアル脱出ゲーム、コスプレ、麻雀、ポーカー、美術館巡り、オンライン英会話、スノーボード、写真<br />",
+          "ギター、ドラム、DTM、デッサン"
+        ]
+      },
+      {
+        "heading": "Favorite Anime",
+        "body": [
+          "Angel Beats、Charlotte、CLANNAD、Dr.STONE、Fate/stay night、NEW GAME、Re:ゼロ、<br />",
+          "アザゼルさん、あそびあそばせ、あの日見た花の名前を僕達はまだ知らない、<br />",
+          "ヴァイオレット・エヴァーガーデン、うちのメイドがウザすぎる、おそ松さん、カッコカワイイ宣言！、<br />",
+          "ガンダム、ギャグマンガ日和、クラナド、グレンラガン、けいおん、けものフレンズ、ケロロ軍曹、<br />",
+          "ケンガンアシュラ、コードギアス、ゴールデンカムイ、この素晴らしい世界に祝福を、サイコパス、<br />",
+          "ジョジョの奇妙な冒険、ソードアートオンライン、ゾンビランドサガ、<br />",
+          "ダンジョンに出会いを求めるのは間違っているだろうか、デジモンアドベンチャー、テニスの王子様、<br />",
+          "とある魔術の禁書目録、ドラゴンボール、ナルト、ノーゲームノーライフ、ハイスコアガール、バキ、<br />",
+          "はたらく細胞、はたらく魔王さま！、ハッピーシュガーライフ、はねバト、ばらかもん、ひぐらしのなく頃に、<br />",
+          "ブルーピリオド、ブルーロック、ベルセルク、ボーボボ・ボーボボ、ぼっち・ざ・ろっく！、ポプテピピック、<br />",
+          "まどかマギカ、メイドインアビス、モブサイコ100、ゆるキャン、らき☆すた、ラブライブ、リコリス・リコイル、<br />",
+          "ワンパンマン、一週間フレンズ、映像研には手を出すな！、化物語、監獄学園、寄生獣、鬼滅の刃、金色のガッシュベル、<br />",
+          "交響詩篇エウレカセブン、荒川アンダーザブリッジ、鋼の錬金術師、黒子のバスケ、坂本ですが？、七つの大罪、<br />",
+          "弱虫ペダル、呪術廻戦、盾の勇者の成り上がり、食戟のソーマ、慎重勇者、新世紀エヴァンゲリオン、進撃の巨人、<br />",
+          "推しの子、男子高校生の日常、賭博黙示録カイジ、刀語、東京喰種、這いよれ！ニャル子さん、北斗の拳、<br />",
+          "僕のヒーローアカデミア、僕は友達が少ない、無職転生、幼女戦記、涼宮ハルヒの憂鬱etc."
+        ]
+      },
+      {
+        "heading": "Favorite Game",
+        "body": [
+          "APEX、PUBG、SEKIRO、アーマードコア、アサシンクリード、オーバーウォッチ 、ガンダム、<br />",
+          "ギアーズオブウォー、キャサリン、キングダムハーツ、グランドセフトオート、ゴッドオブウォー、<br />",
+          "シティーズ、スマッシュブラザーズ、ゼルダの伝説、ダークソウル、テイルズオブ、デビルメイクライ、<br />",
+          "ドラゴンズドグマ、Hi-Fi RUSH、ニーア、ファイナルファンタジー、ペルソナ、ポケットモンスター、ポケモンカード、<br />",
+          "マリオ、メタルギアソリッド、メタルスラッグ、モンスターハンター、遊戯王、ワンダと巨像、戦場のヴァルキュリア、<br />",
+          "地球防衛軍etc."
+        ]
+      },
+      {
+        "heading": "DB",
+        "body": [
+          "SQL Server、PostgreSQL、MySQL、SQLLite"
+        ]
+      },
+      {
+        "heading": "Adobe",
+        "body": [
+          "Photoshop、illustrator、Aftereffect、Lightroom、PremierePro"
+        ]
+      },
+      {
+        "heading": "Programming",
+        "body": [
+          "C♯、C++、HTML、CSS、JavaScript、PHP"
+        ]
+      },
+      {
+        "heading": "DCG",
+        "body": [
+          "Blender、Houdini"
+        ]
+      },
+      {
+        "heading": "GameEngine",
+        "body": [
+          "Unity、UnrealEngine"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "Windows、Mac、ios、Android、AzureKinectDK、RealSense、LeapMotion、3Dprinter、<br />",
+          "LookingGlass、VR HMD(HTC Vive、OculusQuest、Pico)、AR HMD(HoloLens)"
+        ]
+      },
+      {
+        "heading": "Others",
+        "body": [
+          "Word、Excel、PowerPoint、Git、Slack、Notion、Miro、Discord、Cura、<br />",
+          "StudioOne、AbletonLive、MaxMsp、Touchdesigner"
+        ]
+      }
+    ]
+  }
+]

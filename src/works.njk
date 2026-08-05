@@ -1,0 +1,12 @@
+---
+layout: layouts/work.njk
+root: ".."
+pagination:
+  data: works
+  size: 1
+  alias: work
+# 出力先は移行前と同じ InteractHTML/<Name>.html / MovieHTML/<Name>.html に固定する
+permalink: "{{ work.dir }}/{{ work.slug }}.html"
+eleventyComputed:
+  title: "{{ work.pageTitle or work.title }}"
+---

@@ -1,0 +1,5 @@
+node_modules/
+_site/
+
+# Claude Code のローカルツーリング
+.claude/

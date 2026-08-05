@@ -1,0 +1,229 @@
+---
+layout: layouts/base.njk
+root: "."
+permalink: "index.html"
+title: "RyosukeFujita Portfolio"
+description: "XR / メディアアート・映像・インタラクティブ作品を中心とした藤田亮介のポートフォリオ"
+noindex: true
+styles: ["IndexStyle.css", "form.css", "modaal.css"]
+fonts:
+  - "https://use.typekit.net/omu3ovz.css"
+  - "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+cdnScripts:
+  - "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"
+  - "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.dom.min.js"
+  - "https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"
+scripts:
+  - "jquery.inview.min.js"
+  - "locomotive-scroll.min.js"
+  - "base.js"
+  - "FirstViewp5.js"
+  - "Form.js"
+  - "modaal.js"
+  - "modaalin.js"
+  - "typing-index.js"
+---
+	<div class="contents-wrapper top">
+
+		<main class="contents-main">
+			<div class="main area-scroll" data-scroll-container data-horizontal="true">
+
+				<header class="contents-header">
+					<div class="header_top">
+						<div id="nav-drawer">
+							<input id="nav-input" type="checkbox" class="nav-unshown">
+							<label id="nav-open" for="nav-input"><span></span></label>
+							<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+							<div id="nav-content" class="hamburgerList">
+								<div>
+									<p class="neon">トップページ</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<section class="section scroll-section" data-scroll-section id="FirstView">
+					<div id="title" class="section-header title">
+						<div class="Hexasgontop"></div>
+						<h1 class="titleSize1 textColor">
+							<span data-scroll class="js_typing_title">Hello My World</span><br>
+						</h1>
+						<h2 class="titleSize2 textColor">
+							<span class="label">
+								<span data-scroll class="js_typing_title">RyosukeFujita Portfolio</span>
+							</span>
+						</h2>
+					</div>
+				</section>
+
+				<section class="section scroll-section" data-scroll-section id="About">
+					<div id="profils" class="article-list About">
+						<img class="Hexasgon" src="./images/Hexasgon.png" alt="">
+						<div class="AboutName">
+							<h3 class="textColor js_typing js_typing_Profile">ABOUT</h3>
+						</div>
+						<div class="Introduction">
+							<div class="Profile_Box">
+								<div class="Profile">
+									<h4 class="textColor IntroductionMainText js_typing_Profile js_typing_P">PROFILE</h4>
+									<h4 class="textColor IntroductionSubText js_typing_Profile">-プロフィール-</h4>
+								</div>
+								<div class="ProfileFlex">
+									<div>
+										<img class="ProfileImg" src="./images/コンポ-1.gif" alt="プロフィール画像" />
+									</div>
+									<div class="ProfileText">
+										<p class="Concept textColor js_typing_PT js_typing_ProfileText">
+											VRの世界を初めて知った時、SAO、
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											電脳コイルの様な世界が目の前に
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											来ていると感動しXRdeveloperに転職。
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											現職では現場作業での事故を仮想世界で
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											疑似体験し、事故率減少を目的とした
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											コンテンツをメインで開発している。
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											「自分の作ったもので人に感動や喜びを与えたい」
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											という自分の核なる想いを常に抱いており現在は
+										</p>
+										<p class="Concept textColor js_typing_ProfileText">
+											メディアアーティストを目指している。
+										</p>
+
+										<div class="Favorimate_Box">
+											<a href="./more.html">
+												<h4 class="FavoriteTitle textColor js_typing_ProfileText">more</h4>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="Biography_Box">
+								<div class="BiographyTitle">
+									<h4 class="textColor IntroductionMainText js_typing_B js_typing_Biography">BIOGRAPHY</h4>
+									<h4 class="textColor IntroductionSubText js_typing_Biography">-バイオグラフィ-</h4>
+								</div>
+								<div class="BiographyMain_Box">
+{%- for entry in biography %}
+									<div class="Biography">
+										<p class="textColor Year js_typing_Biography">{{ entry.year }}</p>
+										<p class="textColor Name js_typing_Biography">{{ entry.name }}</p>
+									</div>
+{%- endfor %}
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="section scroll-section" data-scroll-section id="Works">
+					<div class="article-list Works">
+						<img class="Hexasgon" src="./images/Hexasgon.png" alt="">
+						<div class="AboutName">
+							<h3 class="textColor js_typing_w js_typing_works">WORKS</h3>
+						</div>
+						<div class="Works_Box">
+							<div class="Interact_Box">
+								<a href="#inline" class="inline a_Box">
+									<img data-scroll class="Works_image MYimage" src="./images/intaract.jpg" alt="Interact">
+								</a>
+								<h4 data-scroll class="WorksText textColor MYimage">Interact</h4>
+							</div>
+							<div class="Movie_Box">
+								<a class="inline_Movie a_Box" href="#inline_Movie">
+									<img data-scroll class="Works_image PYimage" src="./images/Movie.jpg" alt="Movie">
+								</a>
+								<h4 data-scroll class="WorksText textColor PYimage">Movie</h4>
+							</div>
+							<div class="Picture_Box">
+								<a class="a_Box" href="./Picture.html">
+									<img data-scroll class="Works_image MYimage" src="./images/picture.jpg" alt="Picture">
+								</a>
+								<h4 data-scroll class="WorksText textColor MYimage">Picture</h4>
+							</div>
+
+							<div class="DTM_Box">
+								<img data-scroll class="Works_image PYimage" src="./images/DTM.jpg" alt="DTM">
+								<h4 data-scroll class="WorksText textColor PYimage">DTM</h4>
+							</div>
+							<div class="Picture_Box">
+								<a class="a_Box" href="./Design.html">
+									<img data-scroll class="Works_image MYimage" src="./images/design.jpg" alt="Design">
+								</a>
+								<h4 data-scroll class="WorksText textColor MYimage">Design</h4>
+							</div>
+						</div>
+
+						{#- モーダルの一覧は works.json から生成する（手作業のリスト二重管理をやめる） -#}
+						<div id="inline" style="display:none;">
+							<div class="Moddal_Box">
+{%- for work in works %}{% if work.category == "interact" %}
+								<a href="./{{ work.dir }}/{{ work.slug }}.html">
+									<img class="Moddal_image" src="./{{ work.thumbnail }}" alt="{{ work.title }}" />
+								</a>
+{%- endif %}{% endfor %}
+							</div>
+						</div>
+
+						<div id="inline_Movie" style="display:none;">
+							<div class="Moddal_Box">
+{%- for work in works %}{% if work.category == "movie" %}
+								<a href="./{{ work.dir }}/{{ work.slug }}.html">
+									<img class="Moddal_image" src="./{{ work.thumbnail }}" alt="{{ work.title }}" />
+								</a>
+{%- endif %}{% endfor %}
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section scroll-section" data-scroll-section id="Form">
+					<div class="article-list Form">
+						<img class="Hexasgon" src="./images/Hexasgon.png" alt="">
+						<div class="AboutName">
+							<h3 class="textColor js_typing_f js_typing_form">FORM</h3>
+						</div>
+						<div class="Form_Box">
+							<form class="contact-form row" action="https://formspree.io/f/xdovzwgl" method="POST">
+								<div class="form-field col x-50">
+									<input name="form" id="name" class="input-text js-input textColor" type="text" required>
+									<label class="label textColor js_typing_form" for="name">Name</label>
+								</div>
+								<div class="form-field col x-50">
+									<input name="form" id="email" class="input-text js-input textColor" type="email" required>
+									<label class="label textColor js_typing_form" for="email">E-mail</label>
+								</div>
+								<div class="form-field col x-100">
+									<input name="form" id="message" class="input-text js-input textColor" type="text" required>
+									<label class="label textColor js_typing_form" for="message">Message</label>
+								</div>
+								<div class="form-field-btn col x-100 align-center">
+									<input class="submit-btn js_typing_form js-in" type="submit" value="Send">
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer class="contents-footer">
+			<section class="section">
+				<p class="copyright textColor">© {{ site.author }} All Rights Reserved.</p>
+			</section>
+		</footer>
+
+	</div>

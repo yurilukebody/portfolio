@@ -1,0 +1,63 @@
+{#
+	全ページ共通の <head> と <body> の外枠。
+
+	各ページが指定できる変数:
+	  title       … <title> と og:title
+	  description … meta description（省略時は site.description）
+	  root        … ルートまでの相対パス（"." または ".."）
+	  noindex     … true で robots noindex を出力
+	  styles      … src/style/ 配下の追加 CSS ファイル名の配列
+	  fonts       … 外部フォント CSS の URL 配列
+	  cdnScripts  … 外部 JS の URL 配列（jQuery の直後に読み込まれる）
+	  scripts     … src/script/ 配下の JS ファイル名の配列
+	  ads         … true で admax 広告タグを出力
+#}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>{{ title }}</title>
+	<meta name="description" content="{{ description or site.description }}">
+	{%- if noindex %}
+	<meta name="robots" content="noindex">
+	{%- endif %}
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:description" content="{{ description or site.description }}">
+	<link rel="shortcut icon" href="{{ root }}/images/Logo.png">
+	<link rel="icon" type="image/png" href="{{ root }}/images/Logo.png">
+
+	<link rel="stylesheet" href="{{ root }}/style/reset.css">
+	<link rel="stylesheet" href="{{ root }}/style/common.css">
+	{%- for name in styles %}
+	<link rel="stylesheet" href="{{ root }}/style/{{ name }}">
+	{%- endfor %}
+	{%- if fonts %}
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	{%- endif %}
+	{%- for href in fonts %}
+	<link rel="stylesheet" href="{{ href }}">
+	{%- endfor %}
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	{%- for src in cdnScripts %}
+	<script src="{{ src }}"></script>
+	{%- endfor %}
+	{%- for name in scripts %}
+	<script src="{{ root }}/script/{{ name }}"></script>
+	{%- endfor %}
+</head>
+<body>
+{{ content | safe }}
+{%- if ads %}
+
+	<!-- admax -->
+	<script src="https://adm.shinobi.jp/s/c91a23096fee7ba3b1a3ed17e9f00cef"></script>
+	<!-- admax -->
+{%- endif %}
+</body>
+</html>
