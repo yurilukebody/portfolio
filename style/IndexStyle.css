@@ -42,7 +42,7 @@ p {
 }
 
 .contents-header {
-    padding: var(--margin) 0;
+    padding: 0;
     position: absolute;
     width: 30px;
     height: 80px;
@@ -552,7 +552,6 @@ path {
   }
   .scroll-section [class^="section-"] {
     max-width: none;
-    /*margin-left: calc(var(--margin) * 1.75);*/
     padding: 0;
     vertical-align: middle;
     white-space: normal;
@@ -573,7 +572,7 @@ path {
     margin-top: 0;
   }
   .scroll-section .setion_headding {
-    margin-right: calc(var(--margin) * 1.75);
+    margin-right: 0;
   }
   .scroll-section .thumbnail:after {
     display: none;

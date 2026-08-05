@@ -1,18 +1,18 @@
 
 $(function () {
 	$('.RXimage').one('inview', function (event, isInView, visiblePartX, visiblePartY) {
-		$(this).addClass("is-inview");//‚P“xƒAƒjƒ[ƒVƒ‡ƒ“‚µ‚½ê‡‚ÍendAnimeƒNƒ‰ƒX‚ğ’Ç‰Á
+		$(this).addClass("is-inview");//ï¼‘åº¦ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã—ãŸå ´åˆã¯endAnimeã‚¯ãƒ©ã‚¹ã‚’è¿½åŠ 
 });
 
 	$('.LXimage').one('inview', function (event, isInView, visiblePartX, visiblePartY) {
-		$(this).addClass("is-inview");//‚P“xƒAƒjƒ[ƒVƒ‡ƒ“‚µ‚½ê‡‚ÍendAnimeƒNƒ‰ƒX‚ğ’Ç‰Á
+		$(this).addClass("is-inview");//ï¼‘åº¦ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã—ãŸå ´åˆã¯endAnimeã‚¯ãƒ©ã‚¹ã‚’è¿½åŠ 
 	});
 
 	$('.PYimage').one('inview', function (event, isInView, visiblePartX, visiblePartY) {
-		$(this).addClass("is-inviewTitle");//‚P“xƒAƒjƒ[ƒVƒ‡ƒ“‚µ‚½ê‡‚ÍendAnimeƒNƒ‰ƒX‚ğ’Ç‰Á
+		$(this).addClass("is-inviewTitle");//ï¼‘åº¦ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã—ãŸå ´åˆã¯endAnimeã‚¯ãƒ©ã‚¹ã‚’è¿½åŠ 
 	});
 
 	$('.PYimageText').one('inview', function (event, isInView, visiblePartX, visiblePartY) {
-		$(this).addClass("is-inviewTitle");//‚P“xƒAƒjƒ[ƒVƒ‡ƒ“‚µ‚½ê‡‚ÍendAnimeƒNƒ‰ƒX‚ğ’Ç‰Á
+		$(this).addClass("is-inviewTitle");//ï¼‘åº¦ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã—ãŸå ´åˆã¯endAnimeã‚¯ãƒ©ã‚¹ã‚’è¿½åŠ 
 	});
 });

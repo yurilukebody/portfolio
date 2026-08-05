@@ -1,3 +1,4 @@
+// å…¥åŠ›ãŒã‚ã‚‹ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã« not-empty ã‚’ä»˜ä¸ã—ã€ãƒ©ãƒ™ãƒ«ã‚’æµ®ã‹ã›ã‚‹
 $(document).ready(function () {
     $('.js-input').keyup(function () {
         if ($(this).val()) {
@@ -6,51 +7,4 @@ $(document).ready(function () {
             $(this).removeClass('not-empty');
         }
     })
-});
-
-
-$(document).ready(function () {
-
-    //var url = location.href
-    //alert(url);
-
-    //if (url = ! "file:///D:/_Hp/prtfolio%20-%20%E3%82%B3%E3%83%94%E3%83%BC/index.html") {
-    //    alert("aa");
-    //    $('.js-input').val("");
-    //    $('input').val("");
-    //    alert("bb");
-
-    //}
-
-});
-
-history.replaceState(null, null, null);
-window.addEventListener('popstate', function (e) {
-    alert('ƒuƒ‰ƒEƒUƒoƒbƒN‚ğŒŸ’m‚µ‚Ü‚µ‚½B');
-});
-
-$(document).ready(function () {
-    $(window).on("beforeunload", function (e) {
-        let navigationType = window?.performance?.getEntriesByType("navigation")[0].type;
-        // let navigationType = e.currentTarget.performance.navigation.type;  // ‚±‚Ì‘‚«•û‚Í”ñ„§
-
-        switch (navigationType) {
-            case "navigate":
-                console.log(navigationType + " : ƒy[ƒW‘JˆÚ");
-                alert("aa");
-                break;
-            case "reload":
-                console.log(navigationType + " : ƒy[ƒWXV");
-                alert("aa");
-                break;
-            case "back_forward":
-                console.log(navigationType + " : –ß‚éEi‚Ş");
-                alert("aa");
-                break;
-            case "prerender":
-                console.log(navigationType + " : prerender");
-                break;
-        }
-    });
-
 });

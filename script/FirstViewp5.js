@@ -5,8 +5,8 @@ let _strutFactor;
 let _strutNoise;
 function setup() {
     canvas = createCanvas(1920, 1080);
-    canvas.position(0, 0);//canvas‚ğƒy[ƒW‚ÌŒ´“_‚ÉŒÅ’è
-    canvas.style('z-index', '-1');//canvas‚ğŒã‚ë‚ÉˆÚ“®‚·‚é
+    canvas.position(0, 0);//canvasã‚’ãƒšãƒ¼ã‚¸ã®åŸç‚¹ã«å›ºå®š
+    canvas.style('z-index', '-1');//canvasã‚’å¾Œã‚ã«ç§»å‹•ã™ã‚‹
     smooth();
     stroke(3,3, 245, 15);
     _strutNoise = random(10);
