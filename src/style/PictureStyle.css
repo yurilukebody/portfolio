@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*===============================================================
+
+	Picture / Design のギャラリー
+
+	元は body に width:1920px、各画像に width="840px" のような固定値を
+	当てた 1920px 専用のモザイクだった。各画像の幅を 1920px に対する
+	比率（インラインの --w）に置き換え、どの幅でも同じ割付を保つ。
+
+===============================================================*/
+
+a:hover {
+	opacity: 1;
+}
+
+.description {
+	font-size: 12px;
+	font-weight: 200;
+}
+
+p {
+	font-family: ＭＳ ゴシック;
+}
+
+body {
+	max-width: var(--content-max);
+	margin: auto;
+	background-color: #121212;
+	overflow-x: hidden;
+}
+
+/*---------------------------------------------------------------
+	header
+---------------------------------------------------------------*/
+
+header {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: clamp(16px, 2.1vw, 40px);
+	pointer-events: none;
+}
+
+.nav {
+	pointer-events: auto;
+	display: inline-block;
+}
+
+.menu-item {
+	padding-bottom: clamp(10px, 1vw, 20px);
+}
+
+.menu-itemImg {
+	width: auto;
+	height: clamp(14px, 1vw, 20px);
+}
+
+/*---------------------------------------------------------------
+	title
+---------------------------------------------------------------*/
+
+.title {
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+.titleSize1 {
+	padding-top: clamp(72px, 5.2vw, 100px);
+	font-size: clamp(28px, 2.6vw, 50px);
+	font-family: eurostile, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+}
+
+/*---------------------------------------------------------------
+	gallery
+
+	--w は「1920px 幅における元の画像幅の割合」。
+	インライン style で 1 枚ずつ指定している。
+---------------------------------------------------------------*/
+
+.Picture {
+	margin-top: var(--block-gap);
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.PictureInlineBox {
+	width: var(--w, 100%);
+}
+
+.PictureBox {
+	display: block;
+	width: 100%;
+}
+
+.PictureInlineBox img,
+.PictureBox img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+.aBox:hover img {
+	transform: scale(0.99);
+	opacity: 0.6;
+	transition-duration: 0.3s;
+}
+
+/* 狭い画面では割付をやめて1枚ずつ縦に並べる */
+@media (max-width: 768px) {
+	.PictureInlineBox {
+		width: 100%;
+	}
+
+	/* 縦並びのナビは高さを取りすぎるため横一列にする */
+	.menu-group {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 18px;
+	}
+
+	.menu-item {
+		padding-bottom: 0;
+	}
+}
+
+/*---------------------------------------------------------------
+	footer
+---------------------------------------------------------------*/
+
+.Reserved {
+	text-align: right;
+	padding: 30px var(--page-gutter) 10px;
+}
+
+.copyright {
+	font-size: clamp(12px, 0.8vw, 15px);
+	font-family: eurostile, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/*---------------------------------------------------------------
+	フェードイン
+---------------------------------------------------------------*/
+
+/* アニメーションスタートの遅延時間を決めるCSS*/
+.delay-time02 { animation-delay: 0.2s; }
+.delay-time04 { animation-delay: 0.4s; }
+.delay-time06 { animation-delay: 0.6s; }
+.delay-time08 { animation-delay: 0.8s; }
+.delay-time10 { animation-delay: 1s; }
+.delay-time12 { animation-delay: 1.2s; }
+.delay-time14 { animation-delay: 1.4s; }
+.delay-time16 { animation-delay: 1.6s; }
+.delay-time18 { animation-delay: 1.8s; }
+.delay-time20 { animation-delay: 2s; }
+.delay-time22 { animation-delay: 2.2s; }
+
+/* スタート時は要素自体を透過0にする */
+.box {
+	opacity: 0;
+}
+
+.fadeUp {
+	animation-name: fadeUpAnime;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.box,
+	.fadeUp {
+		animation: none;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,54 @@
+---
+layout: layouts/page.njk
+styles: ["work.css"]
+cdnScripts: ["https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"]
+scripts: ["jquery.inview.min.js", "typing-scroll.js", "interact.js"]
+ads: true
+---
+{#-
+	作品詳細ページの共通レイアウト。
+	pagination の alias `work` に以下を期待する:
+	  title / hero / videos / commentaryHtml / sections
+-#}
+{%- set youtubeAllow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" %}
+{%- set vimeoAllow = "autoplay; fullscreen; picture-in-picture" %}
+	<main>
+		<div class="title">
+{%- if work.hero %}
+			<img class="PYimage" src="{{ root }}/{{ work.hero }}" alt="{{ work.title }}" />
+{%- endif %}
+			<div class="section-header title">
+				<h1 class="titleSize1 textColor PYimageText">{{ work.title }}</h1>
+			</div>
+		</div>
+		<div class="wrapper">
+
+{%- if work.commentaryHtml %}
+			<div class="Commentary">
+				{{ work.commentaryHtml | join("\n\t\t\t\t") | safe }}
+			</div>
+{%- endif %}
+{%- if work.videos %}
+
+			<div class="Video">
+{%- for video in work.videos %}
+{%- set videoTitle = video.title if video.title else ("YouTube video player" if video.provider == "youtube") %}
+				{# サイズは work.css の aspect-ratio 16/9 で決める #}
+				<iframe src="{{ video.src }}" frameborder="0"{% if videoTitle %} title="{{ videoTitle }}"{% endif %} allow="{{ youtubeAllow if video.provider == "youtube" else vimeoAllow }}" allowfullscreen></iframe>
+{%- endfor %}
+			</div>
+{%- endif %}
+
+			<div class="Explanatory">
+{%- for section in work.sections %}
+				<div class="ExplanatoryBox">
+					<h3 class="ExplanatoryH3 textColor js_typing">{{ section.heading }}</h3>
+					<p class="ExplanatoryText textColor js_typing">
+						{{ section.body | join("\n\t\t\t\t\t\t") | safe }}
+					</p>
+				</div>
+{%- endfor %}
+			</div>
+			<div class="endButtomBox"></div>
+		</div>
+	</main>

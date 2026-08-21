@@ -1,0 +1,637 @@
+@charset "UTF-8";
+
+/*===============================================================
+
+	トップページ
+
+	locomotive-scroll による横スクロールの1画面=1パネル構成。
+	元は body に height:1080px、各パネルに width:1920px を直接指定して
+	いたため 1920x1080 以外の解像度で破綻していた。
+	パネルはビューポート基準（100vw / 100vh）にし、内部の位置指定は
+	common.css の基準値と clamp() に置き換えている。
+
+	768px 以下では横スクロールをやめて縦積みにする
+	（切り替えは script/base.js の locomotive 設定と対になっている）。
+
+===============================================================*/
+
+a:hover {
+  opacity: 1;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/*---------------------------------------------------------------
+	header
+---------------------------------------------------------------*/
+
+.header_top {
+    position: fixed;
+}
+
+.contents-header {
+    padding: 0;
+    position: absolute;
+    width: 30px;
+    height: 80px;
+    left: 20px;
+    z-index: 10;
+}
+
+.contents-header .section > * {
+  max-width: none;
+}
+
+/*===============================================================
+
+	FirstView
+
+===============================================================*/
+
+.title {
+    margin-left: var(--page-gutter);
+    position: relative;
+    bottom: clamp(40px, 15.6vw, 300px);
+    width: calc(100vw - var(--page-gutter));
+}
+
+.titleSize1 {
+    font-size: clamp(30px, 3.75vw, 72px);
+    font-family: tachyon, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.titleSize2 {
+    font-size: clamp(20px, 2.5vw, 48px);
+    font-family: eurostile, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 20px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+/*---------------------------------------------------------------
+	パネル共通
+---------------------------------------------------------------*/
+
+.About,
+.Works,
+.Form {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.About {
+    background-color: #121212;
+}
+
+.Works {
+    background-color: #0d0d0d;
+}
+
+.Form {
+    background-color: #121212;
+}
+
+/* パネル見出し（ABOUT / WORKS / FORM） */
+.About h3,
+.Works h3,
+.Form h3 {
+    font-size: clamp(24px, 2.5vw, 48px);
+    font-family: eurostile, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    left: var(--section-gutter);
+    top: clamp(56px, 4.4vw, 85px);
+}
+
+.Hexasgon {
+  height: clamp(70px, 6.8vw, 130px);
+  width: clamp(80px, 7.8vw, 150px);
+  margin-top: 5px;
+}
+
+.Hexasgontop {
+    height: 30px;
+    width: clamp(80px, 7.8vw, 150px);
+    margin-top: 5px;
+}
+
+/*---------------------------------------------------------------
+	About
+---------------------------------------------------------------*/
+
+.Introduction {
+    margin-top: clamp(110px, 9.4vw, 180px);
+    position: absolute;
+    left: var(--section-gutter);
+    right: var(--section-gutter);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Profile {
+    position: absolute;
+}
+
+.Introduction .IntroductionMainText {
+    font-size: clamp(19px, 1.46vw, 28px);
+    font-family: ＭＳ ゴシック;
+    display: inline-block;
+}
+
+.Introduction .IntroductionSubText {
+    font-size: clamp(14px, 1.05vw, 20px);
+    font-family: ＭＳ ゴシック;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.ProfileFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: clamp(40px, 3.1vw, 60px);
+}
+
+.ProfileBox {
+    margin-top: clamp(40px, 3.1vw, 60px);
+}
+
+.ProfileImg {
+    width: clamp(220px, 23.4vw, 450px);
+    height: auto;
+}
+
+.ProfileText {
+    padding-left: 10px;
+    min-width: 0;
+}
+
+.Concept {
+    font-size: clamp(13px, 1.05vw, 20px);
+    line-height: 1.75;
+}
+
+.Favorimate_Box {
+    margin-top: 10px;
+}
+
+.FavoriteTitle {
+    font-size: clamp(14px, 1.05vw, 20px);
+    text-decoration: underline;
+}
+
+.Favorimate {
+    padding-top: 10px;
+    font-size: clamp(12px, 0.83vw, 16px);
+    line-height: 1.9;
+}
+
+.Favorimate_buttom {
+    font-size: clamp(12px, 0.83vw, 16px);
+    line-height: 1.9;
+}
+
+.Biography_Box {
+    margin-left: clamp(24px, 20.8vw, 400px);
+}
+
+.Biography {
+    margin-top: clamp(14px, 1.3vw, 25px);
+}
+
+.Biography .Year {
+    font-size: clamp(14px, 1.05vw, 20px);
+    font-family: eurostile, sans-serif;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.Biography .Name {
+    margin-top: 5px;
+    font-size: clamp(13px, 1.05vw, 20px);
+}
+
+/*---------------------------------------------------------------
+	Works
+---------------------------------------------------------------*/
+
+.Works_Box {
+    margin-top: clamp(110px, 9.4vw, 180px);
+    margin-left: clamp(16px, 15.6vw, 300px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Works_image {
+    width: clamp(90px, 10.4vw, 200px);
+    height: clamp(260px, 31.25vw, 600px);
+    object-fit: cover;
+}
+
+.MYimage {
+    position: relative;
+    transform: translateY(-30%);
+    opacity: 0;
+}
+
+.PYimage {
+    position: relative;
+    transform: translateY(30%);
+    opacity: 0;
+}
+
+.is-inview {
+    opacity: 1;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+    transition-duration: 1s;
+}
+
+.Interact_Box {
+    position: relative;
+}
+
+.Movie_Box,
+.Picture_Box,
+.DTM_Box {
+    padding-left: clamp(12px, 2.6vw, 50px);
+    position: relative;
+}
+
+.a_Box:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+    filter: brightness(300%);
+    transition-duration: 0.3s;
+}
+
+.InteractButtom {
+    display: inline-block;
+}
+
+image {
+    pointer-events: none;
+}
+
+path {
+    opacity: 0;
+}
+
+.WorksText {
+    font-size: clamp(15px, 1.46vw, 28px);
+    font-family: tachyon, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Moddal_image {
+    width: clamp(90px, 10.2vw, 195px);
+    height: clamp(90px, 10.2vw, 195px);
+    object-fit: cover;
+}
+
+.Moddal_image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition-duration: 0.3s;
+}
+
+/*---------------------------------------------------------------
+	Form
+---------------------------------------------------------------*/
+
+.Form_Box {
+    margin-top: clamp(110px, 9.4vw, 180px);
+    margin-left: clamp(16px, 3.1vw, 60px);
+    margin-right: clamp(16px, 3.1vw, 60px);
+    max-width: 1140px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/*---------------------------------------------------------------
+	footer
+---------------------------------------------------------------*/
+
+.contents-footer {
+    font-size: 12px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 10;
+}
+
+.copyright {
+    font-size: clamp(12px, 0.8vw, 15px);
+    font-family: eurostile, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*===============================================================
+
+	scroll section
+
+===============================================================*/
+
+.scrollbtn {
+  display: none;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scroll-section + .scroll-section {
+  margin-top: 0;
+}
+
+.scroll-section .thumbnail figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scroll-section .thumbnail.trac-back figure {
+  transform: scale(1.5) !important;
+  transition: transform 1.4s cubic-bezier(.165,.84,.44,1),-webkit-transform 1.4s cubic-bezier(.165,.84,.44,1);
+}
+
+.scroll-section .thumbnail.trac-back figure.is-inview {
+  transform: scale(1) !important;
+  transition-delay: .1s;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+.scroll-section .thumbnail img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*---------------------------------------------------------------
+	769px 以上: 横スクロール（1画面=1パネル）
+---------------------------------------------------------------*/
+
+@media (min-width: 769px) {
+  html.has-scroll-init {
+    overflow: hidden;
+  }
+  .area-scroll {
+    height: 100vh;
+    padding: 0 !important;
+    font-size: 0;
+    letter-spacing: 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  .area-scroll:before {
+    content: '';
+    height: 100%;
+    font-size: 0;
+    line-height: 1;
+    letter-spacing: 0;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .scroll-section {
+    width: max-content;
+    font-size: 1rem;
+    letter-spacing: .075em;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .scroll-section .section {
+    display: inline-block;
+  }
+  .scroll-section [class^="section-"] {
+    max-width: none;
+    padding: 0;
+    vertical-align: middle;
+    white-space: normal;
+    display: inline-block;
+  }
+  .scroll-section [class^="section-"].size-s {
+    width: 100%;
+    max-width: 600px;
+  }
+  .scroll-section [class^="section-"].size-l {
+    width: 100%;
+    max-width: 1020px;
+  }
+  .scroll-section [class^="section-"].vertical-full {
+    height: 100vh;
+  }
+  .scroll-section [class^="section-"] + [class^="section-"] {
+    margin-top: 0;
+  }
+  .scroll-section .setion_headding {
+    margin-right: 0;
+  }
+  .scroll-section .thumbnail:after {
+    display: none;
+  }
+  .scroll-section .thumbnail img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+  }
+}
+
+/*---------------------------------------------------------------
+	768px 以下: 横スクロールをやめて縦に積む
+
+	絶対配置を解除し、パネルの高さを内容なりにする。
+---------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .contents-header {
+    position: fixed;
+    left: 10px;
+  }
+
+  .title {
+    margin-left: var(--page-gutter);
+    margin-right: var(--page-gutter);
+    width: auto;
+    bottom: 0;
+    padding: 96px 0 48px;
+  }
+
+  .About,
+  .Works,
+  .Form {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 88px var(--page-gutter) 56px;
+  }
+
+  .About h3,
+  .Works h3,
+  .Form h3 {
+    position: static;
+    margin-bottom: 24px;
+  }
+
+  .AboutName {
+    width: 100%;
+  }
+
+  .Hexasgon,
+  .Hexasgontop {
+    height: auto;
+    width: 88px;
+  }
+
+  /* 絶対配置をやめて通常フローに戻す */
+  .Introduction {
+    position: static;
+    margin-top: 24px;
+    display: block;
+    width: 100%;
+  }
+
+  .Profile {
+    position: static;
+  }
+
+  .Profile_Box,
+  .Biography_Box {
+    width: 100%;
+  }
+
+  .ProfileFlex {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .ProfileImg {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .ProfileText {
+    padding-left: 0;
+    margin-top: 16px;
+  }
+
+  .Biography_Box {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+
+  /* Works は横スクロールできる帯にする */
+  .Works_Box {
+    margin-top: 24px;
+    margin-left: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+  }
+
+  .Works_Box > div {
+    flex: 0 0 auto;
+  }
+
+  .Works_image {
+    width: 120px;
+    height: 320px;
+  }
+
+  .Form_Box {
+    margin: 24px 0 0;
+    max-width: none;
+  }
+
+  .contents-footer {
+    position: static;
+    text-align: right;
+    padding: 24px var(--page-gutter);
+  }
+}
+
+/*===============================================================
+
+	フェードイン
+
+===============================================================*/
+
+.box {
+    opacity: 0;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.delay-time02 { animation-delay: 0.2s; }
+.delay-time04 { animation-delay: 0.4s; }
+.delay-time06 { animation-delay: 0.6s; }
+.delay-time08 { animation-delay: 0.8s; }
+.delay-time10 { animation-delay: 1s; }
+.delay-time12 { animation-delay: 1.2s; }
+.delay-time14 { animation-delay: 1.4s; }
+.delay-time16 { animation-delay: 1.6s; }
+.delay-time18 { animation-delay: 1.8s; }
+.delay-time20 { animation-delay: 2s; }
+.delay-time22 { animation-delay: 2.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+    .MYimage,
+    .PYimage {
+        transform: none;
+        opacity: 1;
+    }
+
+    .box,
+    .fadeUp {
+        animation: none;
+        opacity: 1;
+    }
+}

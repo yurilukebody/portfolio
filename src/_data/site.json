@@ -1,0 +1,11 @@
+{
+  "title": "RyosukeFujita Portfolio",
+  "author": "Ryosuke.fujita",
+  "description": "XR / メディアアート・映像・インタラクティブ作品を中心とした藤田亮介のポートフォリオ",
+  "nav": [
+    { "label": "Home",  "href": "index.html",         "image": "images/Home.png" },
+    { "label": "About", "href": "index.html#profils", "image": "images/About.png" },
+    { "label": "Works", "href": "index.html#Works",   "image": "images/Works.png" },
+    { "label": "Form",  "href": "index.html#Form",    "image": "images/Fome.png" }
+  ]
+}

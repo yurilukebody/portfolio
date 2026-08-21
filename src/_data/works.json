@@ -1,0 +1,1046 @@
+[
+  {
+    "dir": "InteractHTML",
+    "slug": "CymaSenses",
+    "category": "interact",
+    "title": "CymaSenses",
+    "thumbnail": "images/modall/10.jpg",
+    "hero": "images/Interact/CymaSenses/CymaSenses.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/860038580?h=7ae519b206"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月8月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Touchdesigner、AbletonLive、MaxMsp、Arduino、bHapticsPlayer、OSC"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "Arduino、Projector、TactSuit、Headphone"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、MakeAudio、MakeMovie"
+        ]
+      },
+      {
+        "heading": "Concept",
+        "body": [
+          "視覚、聴覚、触覚となる3つの感覚を繋げる体験<br />"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "デジタルハリウッドUI/UXコースの卒業制作<br />",
+          "音を視覚的に変化させるサイマティクスに着目、実物のサイマティクスにリアルタイムに変化する。<br />",
+          "映像をマッピングすることにより物理の動きにとらわれないサイマティクスの表現が可能。<br />",
+          "音自体はMaxMSPでAmbientといわれている聞き心地の良い音楽を自動演奏させており、<br />",
+          "その背景にソルフォジオ周波数と呼ばれている人体に影響を与えることができる特定の周波数を流している。<br />",
+          "触覚はタクトスーツを使用しており専用のソフトを用いることで流れる周波数によって振動を調整する事ができる。<br />",
+          "体験者は作品の前に座ってもらい、タクトスーツ、ヘッドホンを着用し、<br />",
+          "音による体感の変化を体験する。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "FollowFrame",
+    "category": "interact",
+    "title": "FollowFrame",
+    "thumbnail": "images/modall/11.jpg",
+    "hero": "images/Interact/FollowFrame/FollowFrame.png",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/866052559?badge=0&autopause=0&player_id=0&app_id=58479"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月6月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Touchdesigner、MaxMsp、UE5、OSC、NDI"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "Projector、Speaker、AzureKinect"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、MakeAudio、MakeMovie"
+        ]
+      },
+      {
+        "heading": "Concept",
+        "body": [
+          "コンテンポラリーダンスの表現を拡張<br />"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "Touchdesignerをインターフェースとして運用しており、最終出力もTouchdesignerになっている。<br />",
+          "AzureKinectから所得した手の位置をUE5、MaxMspそれぞれに渡し、エフェクトと音を発生させている。<br />",
+          "作品の目的はコンセプトにもあるがコンテンポラリーダンスをしている演者の動きに拡張する事としている。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "Runmen",
+    "category": "interact",
+    "title": "Runmen",
+    "thumbnail": "images/modall/1.png",
+    "hero": "images/Interact/Runmen/RunmenTitle.jpg",
+    "videos": [
+      {
+        "provider": "youtube",
+        "src": "https://www.youtube.com/embed/1bRnVpm0PEI"
+      }
+    ],
+    "commentaryHtml": [
+      "<div class=\"commentarybox1\">",
+      "\t\t<img class=\"commentaryimg LXimage\" src=\"../images/Interact/Runmen/Runmen01.png\" alt=\"Alternate Text\" />",
+      "\t\t<img class=\"commentaryimgaf LXimage\" src=\"../images/Interact/Runmen/Runmen02.png\" alt=\"Alternate Text\" />",
+      "</div>",
+      "<div  class=\"commentarybox2 js_typing_title\">",
+      "\t<img  class=\"commentaryimg RXimage\" src=\"../images/Interact/Runmen/Runmen03.png\" alt=\"Alternate Text\" />",
+      "\t<img class=\"commentaryimgaf RXimage\" src=\"../images/Interact/Runmen/Runmen015.png\" alt=\"Alternate Text\" />",
+      "</div>",
+      "<p class=\"commentarytext textColor js_typing\">",
+      "\tステージと妨害オブジェクトはBlenderで制作、マテリアルはUEで調整",
+      "</p>",
+      "<div class=\"commentarybox3\">",
+      "\t<img class=\"commentaryimg LXimage\" src=\"../images/Interact/Runmen/Runmen05.png\" alt=\"Alternate Text\" />",
+      "</div>",
+      "<p class=\"commentarytext2 textColor js_typing\">",
+      "\tHitBoxのDetailsにXYZの移動速度及び最大、最小距離のパラメータを",
+      "\t<br />",
+      "\t用意、調整可能",
+      "</p>"
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2022月8月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "UnrealEngen5、C++、Blueprint、Blender"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、Modeling、Materials、Ui design、Multi Audio"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "第18回UE5ぷちコンに提出物として制作、テーマが「かける」なのでストレートに駆け抜けるゲームにしました。<br />",
+          "予想不可な不具合を出さない＆爽快感を楽しむ為にレーンシステムを採用、<br />",
+          "UE5の新規機能であるLumenにフォーカスし、ライトは一切使用しておらずLumenの反射光のみとなっている。<br />",
+          "今回は入賞出来なかったが、UnrealEngineの理解力を上げる為にも次回も挑戦していきたいと考えてます。<br />"
+        ]
+      },
+      {
+        "heading": "Game systems",
+        "body": [
+          "キャラクターは自動で前進します、多くのスコアを集めてゴールを目指します。<br />",
+          "赤いブロックに当たると所持スコアに応じてスコアが減少します。<br />",
+          "移動キー       A、D<br />",
+          "ジャンプ       Space<br />",
+          "スライディング Shift<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "3DTouchCharacter",
+    "category": "interact",
+    "title": "3DTouchCharacter",
+    "thumbnail": "images/modall/0.png",
+    "hero": "images/Interact/3DTouchCharacter/3DTouchCharacterTitle.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/710430490?h=2fd45b26eb"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2021月5月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、C#"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "LookingGlassPortrait、LeapMotion"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "LookingGlassPortraitを先着購入できたので<br />",
+          "LeapMotionを繋げて中のキャラクターを触れるようにしてみました。<br />",
+          "視覚的に触れているのはわかるけど、グローブ型の触覚デバイスと組み合わせたら<br />",
+          "もっと触った感触を実感できそう<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "PointCloudKinectDK",
+    "category": "interact",
+    "title": "PointCloudKinectDK",
+    "thumbnail": "images/modall/2.png",
+    "hero": "images/Interact/PointCloudKinectDK/PointCloudKinectDKTitle.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/780584531?h=5671205e27"
+      },
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/712538604?h=b84a118348"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2020月3月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、C#、MonobitUnityNetworking"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "AzureKinectDK、OculusQuest"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "AzureKinectDKからDepthとカラー画像を取得、色付きのPointCloudを<br />",
+          "MonobitUnityNetworkingを用いてネット経由でOculusQuestに送信しています。<br />",
+          "ネット経由なので遠距離にいる相手ともVR空間上でのコミニュケーションが可能となっています。<br />",
+          "MonobitUnityNetworkingがボイスチャットもサポートしている為通話も可能です。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "GetInteractionPos",
+    "category": "interact",
+    "title": "GetInteractionPos",
+    "thumbnail": "images/modall/3.png",
+    "hero": "images/Interact/GetInteractionPos/GetInteractionPosTitle.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/712540824?h=d2e45f7c5e"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2020月3月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、C#"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "AzureKinectDK"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "AzureKinectDKからDepthを取得し、実際の壁の位置にBoxColliderを生成<br />",
+          "BodyTracking機能を用いて手と壁の衝突位置を取得する事が可能です。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "SkySword",
+    "category": "interact",
+    "title": "SkySword",
+    "thumbnail": "images/modall/4.png",
+    "hero": "images/Interact/SkySword/SkySwordTitle.jpg",
+    "videos": [
+      {
+        "provider": "youtube",
+        "src": "https://www.youtube.com/embed/wNXQVoYSECU"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2018月7月 - 2018月8月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、C#"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "HTC VIVE"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、MultiAudio"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "VRアカデミーの卒業制作として2018/08/25に渋谷で行われた【VR FES Vol.3】に出展しました。<br />",
+          "空を飛びながら敵と戦い爽快で気持ちのいい体験をコンセプトにしています。<br />"
+        ]
+      },
+      {
+        "heading": "Game systems",
+        "body": [
+          "プレイヤーは左手にシューター、右手にソードを持っており、シューターのトリガーを押すことにより<br />",
+          "シューターの向いている方向に移動します。<br />",
+          "ソードを振って空に飛んでいるドラゴンを全て倒すとゲームクリアになります。<br />",
+          "移動   　  左手コントローラのトリガー押下<br />",
+          "攻撃   　  右手コントローラーを振る<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "Snowboard VR",
+    "category": "interact",
+    "title": "SnowboardVR",
+    "thumbnail": "images/modall/5.png",
+    "hero": "images/Interact/SnowboardVR/Snowboard VRTitle.jpg",
+    "videos": [
+      {
+        "provider": "youtube",
+        "src": "https://www.youtube.com/embed/868zzf4e4og"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2018月6月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、C#"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "Fove"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、StageLevel"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "VRアカデミーにてチーム開発を行い学校内のVRハッカソンにて出展、<br />",
+          "使用したFOVEの特徴である視線追跡機能を活用し片目を閉じるとplayerは閉じた目の方向に曲がるようになっており<br />",
+          "紫色のポールの間を通ってゴールを目指す作品。<br />",
+          "体験者の前に扇風機を設置し、よりスピード感を実感出来るように工夫した。<br />"
+        ]
+      },
+      {
+        "heading": "Game systems",
+        "body": [
+          "プレイヤーは自動で前進します、右目を閉じると右に、左目を閉じると左に向きを変えます。<br />",
+          "途中に出てくるゲートを通過しながらゴールを目指します。<br />",
+          "右に回転      右目を閉じる<br />",
+          "左に回転      左目を閉じる<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "WinWithBusinessCard",
+    "category": "interact",
+    "title": "WinWithBusinessCard",
+    "thumbnail": "images/modall/6.png",
+    "hero": "images/Interact/WinWithBusinessCard/WinWithBusinessCardTitle.jpg",
+    "videos": [
+      {
+        "provider": "youtube",
+        "src": "https://www.youtube.com/embed/mAd6NtVe0gU"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2019月3月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、Arkit"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "SmartPhone"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "ARで一発芸をやりたいと思い作成しました。<br />",
+          "遊戯王というカードゲームにエクゾディアという5枚そろえると勝負に勝利することが出来るカードがあり、<br />",
+          "名刺をかざすと勝利する事が出来ます。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "InteractHTML",
+    "slug": "AREventer",
+    "category": "interact",
+    "title": "AREventer",
+    "thumbnail": "images/modall/7.png",
+    "hero": "images/Interact/AREventer/AREventerTitle.jpg",
+    "videos": [
+      {
+        "provider": "youtube",
+        "src": "https://www.youtube.com/embed/5ZlcN4MkHp0"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2019月5月 - 2019月8月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "HTML、CSS、Javascript、A-Frame、PHP、AWS"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "SmartPhone"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "VRアカデミーのメンバーとチーム開発にて2019/08/24に渋谷で行われた【VR FES Vol.5】にOB枠で出展しました。<br />",
+          "イベントの観覧者がARに触れてもらうにはどうしたらいいのかがコンセプトになっています。<br />",
+          "2つのモードがあり、一つが、学生作品のサムネイルをアイコンにし、<br />",
+          "アイコンをスマホで見ることにより作品の説明を見ることが可能です。<br />",
+          "もう一つが、専用のサイトから、作品のいいね投票が可能になっており<br />",
+          "投票の数によりARで表示されるオーラの数が大きくなり一目で人気の作品がわかる様になっています。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "1MinuteProjectionMappingInTokyo2023",
+    "category": "movie",
+    "title": "1MinuteProjectionMappingInTokyo2023",
+    "thumbnail": "images/modall/12.jpg",
+    "hero": "images/Move/1MinuteProjectionMappingInTokyo2023/1MinuteProjectionMappingInTokyo2023Title.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/868711158?badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "1minutePM2023_Tokyo_現地投影"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月6月 - 2023月7月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "UE5、Blender、Niagara、StudioOne、AfterEffect、LightRoom"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、Modeling、MakeMovie、MultiAudio"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "1minuteProjectionMappinginTOKYO2023に提出した作品<br />",
+          "テーマ「Link」<br />"
+        ]
+      },
+      {
+        "heading": "Story",
+        "body": [
+          "人類は進化するAIと協力し、共に進化していくことが可能です。<br />",
+          "持続的な進化は相互に利益をもたらし、AIの能力と人間の洞察力を組み合わせることで、<br />",
+          "未解決の課題や複雑な問題に対してより効果的な解決策が見出せるでしょう。<br />",
+          "しかし、その際には倫理的・社会的な側面を常に意識し、<br />",
+          "人間の尊厳とプライバシーを保護しつつ進化していくことが大切です。<br />",
+          "人類がAIと協力することで、より持続可能で公正な未来を築くことが可能となる。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "FlowerFloor",
+    "category": "movie",
+    "title": "FlowerFloor",
+    "thumbnail": "images/modall/13.jpg",
+    "hero": "images/Move/FlowerFloor/FlowerFloor.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/866448019?badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "FlowerFloor"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月8月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、Blender、ShaderGraph、VFXGraph"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Modeling、MakeMovie"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "リコーの超単焦点プロジェクターを入手したのでテスト用としてお盆休みに作成。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "VirtualProjector",
+    "category": "movie",
+    "title": "VirtualProjector",
+    "thumbnail": "images/modall/8.png",
+    "hero": "images/Move/VirtualProjector/VirtualProjector.png",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/870204296?badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "VirtualProjector"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月7月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "UE5"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "投影マッピングで疑似的にプロジェクターから投影が可能<br />",
+          "リハーサル用に作成<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "VOID",
+    "category": "movie",
+    "title": "VOID",
+    "thumbnail": "images/modall/4.jpg",
+    "hero": "images/Move/VOID/VOIDTitle.jpg",
+    "videos": [
+      {
+        "provider": "youtube",
+        "src": "https://www.youtube.com/embed/KxLavMxFvSo"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2022月9月 - 2022月11月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、C#、Houdini、Materials、shaderGraph、VFXGraph、<br />",
+          "Aftereffect、PremierePro、Illustrator、Photoshop、Geospatialapi、Arkit"
+        ]
+      },
+      {
+        "heading": "Device",
+        "body": [
+          "PC、SmartPhone"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、Modeling、MakeMovie、MultiAudio"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "PLATEAUAWARD2022の提出物として制作しました。",
+          "<a href=\"https://www.mlit.go.jp/plateau-next/award/#top\">(https://www.mlit.go.jp/plateau-next/award/#top)</a><br />",
+          "ARグラスが当たり前になった未来がコンセプトになっています。<br />",
+          "会社のメンバーと2人のチームで進めていき自分は主にシステム、パーティクル、動画編集を担当しました。<br />"
+        ]
+      },
+      {
+        "heading": "Outline",
+        "body": [
+          "ARグラスを常用する未来都市では、AR情報表示空間は二次元のサーフェスではなく3次元のボリュームである。<br />",
+          "建物はそれ自体が情報を発するだけではなく、<br />",
+          "都市のネガティヴスペース(ボイド)もAR情報を投影できる可能性をもつ。<br />",
+          "都市に溢れる情報は多岐に渡るため、街にARチャンネルが乱立し、<br />",
+          "ボイド空間のAR表示権を巡り様々な問題が想定される。<br />",
+          "我々はAR表示権を土地や建築物の所有者に帰属する権利と捉え、<br />",
+          "第三者による私有地へのAR表示は基本的に権利の譲渡や賃借契約に基づく合意が必要であると考える。<br />",
+          "AR表示権は全てのチャンネルにおけるARの強制表示を保証するため、<br />",
+          "理想的な一般企業の広告空間として売買され資産化される。<br />",
+          "三次元空間上にマップされたAR表示区画は法整備のもと一元管理され、<br />",
+          "バーチャル競売により示価格を決定し、現在の不動産のように市場を形作る。<br />",
+          "AR表示権に関するサービスをVOIDとして提案する。<br />"
+        ]
+      },
+      {
+        "heading": "PC systems",
+        "body": [
+          "該当建物をクリックすると区画の価格が表示され、マウスオーバーでセルが点灯、<br />",
+          "クリックすることでUIにアクセスし、購買もしくはより高い額を提示することができる。<br />",
+          "Wキー　　　　　　　　　　前移動<br />",
+          "Aキー　　　　　　　　　　左移動<br />",
+          "Sキー　　　　　　　　　　後移動<br />",
+          "Dキー　　　　　　　　　　右移動<br />",
+          "Qキー　　　　　　　　　　降下<br />",
+          "Eキー　　　　　　　　　　上昇<br />",
+          "マウス左ボタンドラッグ　 視点の回転<br />"
+        ]
+      },
+      {
+        "heading": "Mobile systems",
+        "body": [
+          "現地にて該当建物近辺情報をカメラで取得する。<br />",
+          "該当建物をタップすると区画の価格が表示され、<br />",
+          "タップすることでUIにアクセスし、購買もしくはより高い額を提示することができる。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "BlurNooisePainting",
+    "category": "movie",
+    "title": "BlurNooisePainting",
+    "thumbnail": "images/modall/8.jpg",
+    "hero": "images/Move/BlurNooisePainting/BlurNooisePaintingTitle.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/804583102?h=e529c67239"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月1月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "TouchDesigner"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "VJのイベントでBlurとNooiseで面白い表現をされている方がいらっしゃったので <br />",
+          "真似をしてBlurとNooiseを使った表現を制作致しました。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "SlitScan",
+    "category": "movie",
+    "title": "SlitScan",
+    "thumbnail": "images/modall/9.jpg",
+    "hero": "images/Move/SlitScan/SlitScanTitle.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/805395987?h=83ea5e7689"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月1月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "TouchDesigner"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "<a href=\"https://youtu.be/QAkqCWUxCug\">https://youtu.be/QAkqCWUxCug</a> <br />",
+          "上記の動画を会社の先輩に紹介され面白い表現と感じ、原理を調べていたらもしかして<br />",
+          "TouchDesignerで再現出来るのではと思い制作しました。<br />",
+          "Texture3D TOPでテクスチャを保持し、Time Machine TOPでグレースケールをoffset毎に表示しています。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "AudioVisualizatio",
+    "category": "movie",
+    "title": "AudioVisualizatio",
+    "thumbnail": "images/modall/5.jpg",
+    "hero": "images/Move/AudioVisualizatio/AudioVisualizatioTitle.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/804583177?h=db9f7a3151"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2023月1月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "TouchDesigner"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "VJをやってみたいと思いAudioVisualizatioを制作しました。 <br />",
+          "これから幅を広げていきたい分野です。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "BangkokProjectionMapping2021",
+    "category": "movie",
+    "title": "BangkokProjectionMapping2021",
+    "thumbnail": "images/modall/9.png",
+    "hero": "images/Move/BangkokProjectionMapping2021/BangkokProjectionMapping2021.png",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/870041746?badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "BangkokProjectionMapping2021"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2021月3月 - 2021月4月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、Materials、ShaderGraph、"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、MakeMovie"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "BangkokProjectionMapping2021に提出した作品<br />",
+          "テーマ「WISH」<br />"
+        ]
+      },
+      {
+        "heading": "Story",
+        "body": [
+          "人々の感情を集合させ、現実社会と理想社会を繋ぐことにより新しい理想郷を描くことを<br />",
+          "目指し人々が幸せになれることを願い続ける。<br />",
+          "みながみな同じではない為バラバラである時、一つになる時、<br />",
+          "様々な瞬間が存在するがその中で輝ける瞬間は必ずどこかに存在し、<br />",
+          "そこから描けるストーリーは無限大であり儚くも美しいものである。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "1MinuteProjectionMappingInTokyo2021",
+    "category": "movie",
+    "title": "1MinuteProjectionMappingInTokyo2021",
+    "thumbnail": "images/modall/1.jpg",
+    "hero": "images/Move/1MinuteProjectionMappingInTokyo2021/1MinuteProjectionMappingInTokyo2021Title.jpg",
+    "videos": [
+      {
+        "provider": "vimeo",
+        "src": "https://player.vimeo.com/video/710378664?h=24d6997804"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2021月7月 - 2021月9月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "Unity、Blender、Materials、ShaderGraph、VFXGraph"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "Programing、Modeling、MakeMovie、MakeAudio"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "1minute Projection Mapping in TOKYO 2021<a href=\"https://www.youtube.com/watch?v=FFf9oE6JBMk\">(https://www.youtube.com/watch?v=FFf9oE6JBMk)</a> <br />",
+          "初参加し制作しましたテーマは「HOPE」<br />",
+          "運営様の配慮で現物の建物に投影して頂けて、いつか自分の作品を沢山の人に見てもらえるようになりたいと思いました。<br />"
+        ]
+      },
+      {
+        "heading": "Story",
+        "body": [
+          "光で新たに誕生する命の喜びを表し、3つの球が現れた<br />",
+          "エデン、アダム、イブが一つに繋がり空高くから地上に落ち命の種をばら撒かれました。<br />",
+          "落ちた命の種がそれぞれの道を進んでいき、<br />",
+          "それぞれ進んでいった命が集まり綺麗な模様を映し出し、<br />",
+          "次は蝶になり一番の輝きを見せてくれます。<br />",
+          "輝き終わった命が最後の力を振り絞り無数の波紋を生み出し、<br />",
+          "そして一筋の光で次の時代を繋いで行くことでしょう。<br />"
+        ]
+      }
+    ]
+  },
+  {
+    "dir": "MovieHTML",
+    "slug": "ShapeAnimation",
+    "category": "movie",
+    "title": "ShapeAnimation",
+    "thumbnail": "images/modall/0.jpg",
+    "hero": "images/Move/ShapeAnimation/ShapeAnimationTitle.jpg",
+    "videos": [
+      {
+        "provider": "youtube",
+        "src": "https://www.youtube.com/embed/5ahrRXa1LqY"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Working period",
+        "body": [
+          "2019月12月"
+        ]
+      },
+      {
+        "heading": "Tools",
+        "body": [
+          "AfterEffects"
+        ]
+      },
+      {
+        "heading": "Role",
+        "body": [
+          "MakeMovie、MultiAudio"
+        ]
+      },
+      {
+        "heading": "About this contents",
+        "body": [
+          "TaoTajima氏のShapeAnimation<a href=\"http://taotajima.jp/works/night-stroll/\">(http://taotajima.jp/works/night-stroll/)</a><br />",
+          "を見て現実世界×ShapeAnimationの綺麗さに衝撃を受けました。<br />",
+          "試しに見様見真似でAfterEffects体験期間中に作成しましたが、<br />",
+          "結構浮いてる感じが出てしまっており本当はまだ作り込みたいところでした。<br />",
+          "これをARグラスで観れたら世界が違った視点で見えるようになる気がします。<br />"
+        ]
+      }
+    ]
+  }
+]

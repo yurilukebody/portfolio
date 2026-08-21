@@ -1,0 +1,9 @@
+	<header>
+		<nav class="nav">
+			<ul class="menu-group">
+			{%- for item in site.nav %}
+				<li class="menu-item"><a href="{{ root }}/{{ item.href }}"><img class="menu-itemImg" src="{{ root }}/{{ item.image }}" alt="{{ item.label }}" /></a></li>
+			{%- endfor %}
+			</ul>
+		</nav>
+	</header>
